@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
 import { Gamepad2, Mail, MapPin, Heart } from "lucide-react";
-
 export const Footer = () => {
-  return (
-    <footer className="bg-card border-t border-border">
+  return <footer className="bg-card border-t border-border">
       <div className="container-custom py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
@@ -28,21 +26,23 @@ export const Footer = () => {
               Navegació
             </h4>
             <ul className="space-y-2">
-              {[
-                { href: "/", label: "Inici" },
-                { href: "/sobre-nosaltres", label: "Sobre Nosaltres" },
-                { href: "/videojocs", label: "Videojocs" },
-                { href: "/equip", label: "Equip" },
-              ].map((link) => (
-                <li key={link.href}>
-                  <Link
-                    to={link.href}
-                    className="text-muted-foreground hover:text-primary transition-colors text-sm"
-                  >
+              {[{
+              href: "/",
+              label: "Inici"
+            }, {
+              href: "/sobre-nosaltres",
+              label: "Sobre Nosaltres"
+            }, {
+              href: "/videojocs",
+              label: "Videojocs"
+            }, {
+              href: "/equip",
+              label: "Equip"
+            }].map(link => <li key={link.href}>
+                  <Link to={link.href} className="text-muted-foreground hover:text-primary transition-colors text-sm">
                     {link.label}
                   </Link>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
 
@@ -52,16 +52,9 @@ export const Footer = () => {
               Serveis
             </h4>
             <ul className="space-y-2">
-              {[
-                "Desenvolupament de Videojocs",
-                "Art 2D i 3D",
-                "Disseny de So",
-                "Disseny Web",
-              ].map((service) => (
-                <li key={service}>
+              {["Desenvolupament de Videojocs", "Art 2D i 3D", "Disseny de So", "Disseny Web"].map(service => <li key={service}>
                   <span className="text-muted-foreground text-sm">{service}</span>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
 
@@ -73,7 +66,7 @@ export const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-3 text-muted-foreground text-sm">
                 <Mail className="w-4 h-4 text-primary" />
-                <span>hola@cacerolagames.com</span>
+                <span>contacte@cacerolagames.com</span>
               </li>
               <li className="flex items-start gap-3 text-muted-foreground text-sm">
                 <MapPin className="w-4 h-4 text-primary mt-0.5" />
@@ -93,6 +86,5 @@ export const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
