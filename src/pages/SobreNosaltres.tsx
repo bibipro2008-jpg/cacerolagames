@@ -64,11 +64,7 @@ const SobreNosaltres = () => {
                   el desenvolupament de videojocs: art, tecnologia, narrativa i passió, 
                   tot cuit a foc lent per crear experiències úniques.
                 </p>
-                <p>
-                  Avui, el nostre equip ha crescut fins a tenir 11 membres, incloent 
-                  desenvolupadors sèniors i júniors, dissenyadors i estudiants en pràctiques. 
-                  Creiem fermament en formar la propera generació de talents.
-                </p>
+                <p>Avui, el nostre equip ha crescut fins a tenir 10 membres, incloent desenvolupadors sèniors i júniors, dissenyadors i estudiants en pràctiques. Creiem fermament en formar la propera generació de talents.</p>
               </div>
             </div>
             
