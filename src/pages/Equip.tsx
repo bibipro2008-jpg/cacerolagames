@@ -12,7 +12,7 @@ import {
 const teamMembers = [
   // Directors
   {
-    name: "Director 1",
+    name: "Biel Pous",
     role: "Cofundador i Director",
     description: "Visionari i líder estratègic. Supervisa la direcció creativa i de negoci de l'estudi.",
     icon: Crown,
@@ -20,7 +20,7 @@ const teamMembers = [
     accent: true,
   },
   {
-    name: "Director 2",
+    name: "Ian Nicolau",
     role: "Cofundador i Director",
     description: "Expert en gestió de projectes i desenvolupament. Assegura que cada projecte arribi a bon port.",
     icon: Crown,
@@ -29,21 +29,21 @@ const teamMembers = [
   },
   // Seniors
   {
-    name: "Sènior 1",
+    name: "Wilson.McFly",
     role: "Desenvolupador Sènior / Tutor",
     description: "Especialista en arquitectura de software. Mentoritza als estudiants mentre lidera el desenvolupament tècnic.",
     icon: Code,
     category: "Desenvolupament Sènior",
   },
   {
-    name: "Sènior 2",
+    name: "Guillem",
     role: "Desenvolupador Sènior / Tutor",
     description: "Expert en gameplay i mecàniques de joc. Guia als júniors i becaris en les millors pràctiques.",
     icon: Code,
     category: "Desenvolupament Sènior",
   },
   {
-    name: "Sènior 3",
+    name: "Lmao",
     role: "Desenvolupador Sènior",
     description: "Especialista en gràfics i optimització. Assegura que el joc funcioni perfectament en totes les plataformes.",
     icon: Code,
@@ -51,21 +51,21 @@ const teamMembers = [
   },
   // Juniors
   {
-    name: "Júnior 1",
+    name: "Hor",
     role: "Desenvolupador Júnior",
     description: "Programador entusiasta amb grans habilitats en C# i Unity. Treballa en sistemes de joc.",
     icon: Code,
     category: "Desenvolupament Júnior",
   },
   {
-    name: "Júnior 2",
+    name: "Jeffrey",
     role: "Desenvolupador Júnior",
     description: "Especialitzat en UI/UX i sistemes de menús. Crea interfícies intuïtives i atractives.",
     icon: Code,
     category: "Desenvolupament Júnior",
   },
   {
-    name: "Júnior 3",
+    name: "Isidoro",
     role: "Desenvolupador Júnior",
     description: "Apassionat de la programació de IA per a videojocs. Dóna vida als personatges no jugables.",
     icon: Code,
