@@ -1,46 +1,31 @@
 import { Layout } from "@/components/layout/Layout";
-import { 
-  Target, 
-  Eye, 
-  Heart, 
-  Users, 
-  Lightbulb, 
-  Award,
-  MapPin,
-  Calendar
-} from "lucide-react";
-
-const values = [
-  {
-    icon: Heart,
-    title: "Passió",
-    description: "Estimem el que fem. Cada línia de codi, cada píxel i cada nota musical reflecteix el nostre amor pels videojocs.",
-  },
-  {
-    icon: Lightbulb,
-    title: "Creativitat",
-    description: "Busquem constantment maneres innovadores de sorprendre i emocionar els jugadors.",
-  },
-  {
-    icon: Users,
-    title: "Treball en Equip",
-    description: "Creiem en el poder de la col·laboració. Junts som més forts i creem millors experiències.",
-  },
-  {
-    icon: Award,
-    title: "Excel·lència",
-    description: "Aspirem a la qualitat AAA. Cada detall compta quan es tracta de crear experiències memorables.",
-  },
-];
-
+import { Target, Eye, Heart, Users, Lightbulb, Award, MapPin, Calendar } from "lucide-react";
+const values = [{
+  icon: Heart,
+  title: "Passió",
+  description: "Estimem el que fem. Cada línia de codi, cada píxel i cada nota musical reflecteix el nostre amor pels videojocs."
+}, {
+  icon: Lightbulb,
+  title: "Creativitat",
+  description: "Busquem constantment maneres innovadores de sorprendre i emocionar els jugadors."
+}, {
+  icon: Users,
+  title: "Treball en Equip",
+  description: "Creiem en el poder de la col·laboració. Junts som més forts i creem millors experiències."
+}, {
+  icon: Award,
+  title: "Excel·lència",
+  description: "Aspirem a la qualitat AAA. Cada detall compta quan es tracta de crear experiències memorables."
+}];
 const SobreNosaltres = () => {
-  return (
-    <Layout>
+  return <Layout>
       {/* Hero Section */}
       <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-gradient-hero relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-float" />
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "-3s" }} />
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float" style={{
+          animationDelay: "-3s"
+        }} />
         </div>
         
         <div className="container-custom relative z-10">
@@ -112,7 +97,7 @@ const SobreNosaltres = () => {
                 </div>
                 <div>
                   <h4 className="font-subheading text-lg font-bold text-foreground">Equip</h4>
-                  <p className="text-muted-foreground">11 membres apassionats</p>
+                  <p className="text-muted-foreground">10 membres apassionats</p>
                 </div>
               </div>
             </div>
@@ -170,12 +155,9 @@ const SobreNosaltres = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {values.map((value, index) => (
-              <div
-                key={value.title}
-                className="glass-effect rounded-xl p-6 text-center hover-lift"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
+            {values.map((value, index) => <div key={value.title} className="glass-effect rounded-xl p-6 text-center hover-lift" style={{
+            animationDelay: `${index * 0.1}s`
+          }}>
                 <div className="w-14 h-14 mx-auto mb-4 rounded-xl bg-primary/20 flex items-center justify-center">
                   <value.icon className="w-7 h-7 text-primary" />
                 </div>
@@ -185,8 +167,7 @@ const SobreNosaltres = () => {
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   {value.description}
                 </p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -215,8 +196,6 @@ const SobreNosaltres = () => {
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default SobreNosaltres;
