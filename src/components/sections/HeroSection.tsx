@@ -61,7 +61,7 @@ export const HeroSection = () => {
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: "0.6s" }}>
             {[
-              { value: "11", label: "Membres" },
+              { value: "10", label: "Membres" },
               { value: "1", label: "Joc en Desenvolupament" },
               { value: "100%", label: "Passió" },
               { value: "∞", label: "Somnis" },
