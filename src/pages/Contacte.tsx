@@ -17,7 +17,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Correu Electrònic",
-    content: "hola@cacerolagames.com",
+    content: "contacte@cacerolagames.com",
     description: "Escriu-nos per a qualsevol consulta",
   },
   {
